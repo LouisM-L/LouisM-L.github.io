@@ -5,7 +5,7 @@
         <title>Louis"s E-Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/home/louis/Documents/GitHub/LouisM-L.github.io/assignment 4.css">
+        <link rel="stylesheet" href="assignment 4.css">
     </head>
 
     <nav>
@@ -19,10 +19,54 @@
     <body>
         <h1 id = "welcome">Contact me here</h1>
         <div id = "contact">
-            <p>Email: louis.messierlavallee@gmail.com</p>
-            <p>Phone: 514-123-467</p>
-            <p>OR</p>
             <p>Fill in the form below and send me a message</p>
+            <label for="fname">Name:</label>
+              <input type="text" name="fname" >    
+
+              <form>
+                <label for="Province">What Provice are you from?</label>
+                <select id="Province" name="Province">
+                  <option value="Alberta">Alberta</option>
+                  <option value="British Columbia">British Columbia</option>
+                  <option value="Manitoba">Manitoba</option>
+                  <option value="New Brunswick">New Brunswick</option>
+                  <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                  <option value="Northwest Territories">Northwest Territories</option>
+                  <option value="Nova Scotia">Nova Scotia</option>
+                  <option value="Nunavut">Nunavut</option>
+                  <option value="Ontario">Ontario</option>
+                  <option value="Prince Edward Island">Prince Edward Island</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="Saskatchewan">Saskatchewan</option>
+                  <option value="Yukon">Yukon</option>
+                </select>
+              </form>
+
+              <form>
+                <p>Would you like use your phone or email for a reply</p>
+                <input type="radio" id="email" name="email" value="email">
+                <label for="email">Email</label><br>
+                <input type="radio" id="phone" name="phone" value="phone">
+                <label for="phone">Phone</label><br>
+              </form> 
+
+              <form id ="email">
+                <label for="femail">Enter your email:</label><br>
+                <input type="email" name="femail"><br><br>
+              </form>
+              <form>
+                <p>or</p>
+              </form>
+                <label for="fnumber">Enter your phone number:</label><br>
+                <input type="phone" name="fnumber"><br><br>
+              <form >
+                <h2>Message Here</h2>
+            
+                <label for="msg2">Message:</label><br>
+                <textarea id="limited" name="msg2" style="width: 365px; height: 115px;"></textarea>
+              </form>
+              
+              <input type="submit" value="Submit">
         </div>
     </body>
 </html>
