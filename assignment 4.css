@@ -62,7 +62,35 @@ ul {
     margin: 10px
   }
   .images {
+    max-width: 100px;
     display: grid;
-    max-width: 25%;
-    max-height: 10%;
+    text-align: left;
+    grid-row-gap: 5px;
+    margin-right: 1%;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(1);
+  }
+  .grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .grid-item2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .grid-item3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .grid-item4 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
