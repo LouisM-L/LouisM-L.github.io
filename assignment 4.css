@@ -61,7 +61,8 @@ ul {
   #email {
     margin: 10px
   }
-  #images {
+  .images {
+    display: grid;
     max-width: 25%;
     max-height: 10%;
   }
